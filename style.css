@@ -1,0 +1,99 @@
+:root {
+    /* Slate */
+
+    --slate-300: #D5E1EF;
+    --slate-500: #68778D;
+    --slate-900: #1F314F;
+
+    /* Text preset 1 */
+
+    --fs-1: 22px;
+    --lh-1: 120%;
+    --ts-1: 0px;
+
+    /* Text preset 2 */
+
+    --fs-2: 15px;
+    --lh-2: 140%;
+    --ts-2: 0.2px;
+
+    /* Spacing */
+
+    --s-200: 16px;
+    --s-300: 24px;
+    --s-500: 40px;
+}
+
+@font-face {
+    font-family: 'Outfit Bold';
+    src: url('./design/fonts/Outfit/static/Outfit-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit Regular';
+    src: url("./design/fonts/Outfit/static/Outfit-Regular.ttf");
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-width: 375px;
+    height: 100%;
+    margin: 0;
+    background: var(--slate-300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--s-300);
+
+    width: 288px;
+
+    background: #FFFFFF;
+
+    border-radius: 20px;
+    padding: var(--s-200) var(--s-200) var(--s-500);
+    box-shadow: inset;
+}
+
+main img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+}
+
+.text {
+    display: grid;
+    gap: var(--s-200);
+
+    text-align: center;
+    margin: 0 var(--s-200);
+}
+
+.text p {
+    margin: 0;
+}
+
+.text p:nth-child(1) {
+    font-family: 'Outfit Bold';
+    font-size: var(--fs-1);
+    line-height: var(--lh-1);
+    letter-spacing: var(--ts-1);
+    color: var(--slate-900);
+}
+
+.text p:nth-child(2) {
+    font-family: 'Outfit Regular';
+    font-size: var(--fs-2);
+    line-height: var(--lh-2);
+    letter-spacing: var(--ts-1);
+    color: var(--slate-500);
+}
