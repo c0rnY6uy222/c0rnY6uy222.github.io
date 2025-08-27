@@ -24,6 +24,8 @@
     --s-500: 40px;
 }
 
+/* Fonts */
+
 @font-face {
     font-family: 'Outfit Bold';
     src: url('./design/fonts/Outfit/static/Outfit-Bold.ttf');
@@ -33,6 +35,8 @@
     font-family: 'Outfit Regular';
     src: url("./design/fonts/Outfit/static/Outfit-Regular.ttf");
 }
+
+/* Main Style */
 
 html {
     height: 100%;
